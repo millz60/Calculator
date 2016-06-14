@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-bd-Ic2">
+                                <rect key="frame" x="206" y="51" width="188" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="nRy-f0-7YM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcw-pj-bgK">
+                                <rect key="frame" x="20" y="252" width="560" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ko6-mQ-TJ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE7-Nr-EUc">
+                                <rect key="frame" x="273" y="322" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="bEF-sS-9Vb"/>
+                                    <constraint firstAttribute="height" constant="30" id="eVy-Hz-vMN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVG-aT-mWj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1d-eU-GIO">
+                                <rect key="frame" x="247" y="360" width="107" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ck6-jW-s2w"/>
+                                    <constraint firstAttribute="width" constant="107" id="tAX-kW-z1v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Subtract"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJX-ds-HG6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXh-Ur-iM8">
+                                <rect key="frame" x="244" y="398" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BuB-Jx-132"/>
+                                    <constraint firstAttribute="width" constant="113" id="SDC-9F-j8u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Multiply"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKE-mS-JuK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4o-Si-wsi">
+                                <rect key="frame" x="259" y="436" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="Lpi-sK-8IU"/>
+                                    <constraint firstAttribute="height" constant="30" id="Vf2-9a-8yt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Divide"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oe-WQ-vAa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Second Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIQ-vx-VmK">
+                                <rect key="frame" x="206" y="122" width="188" height="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P4o-Si-wsi" firstAttribute="top" secondItem="bXh-Ur-iM8" secondAttribute="bottom" constant="8" symbolic="YES" id="1yX-o0-Ww1"/>
+                            <constraint firstItem="bXh-Ur-iM8" firstAttribute="top" secondItem="W1d-eU-GIO" secondAttribute="bottom" constant="8" symbolic="YES" id="4C0-66-Vd7"/>
+                            <constraint firstItem="bhi-bd-Ic2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="AJ6-6G-6W0"/>
+                            <constraint firstItem="BE7-Nr-EUc" firstAttribute="centerX" secondItem="W1d-eU-GIO" secondAttribute="centerX" id="CDO-hH-5Cs"/>
+                            <constraint firstItem="W1d-eU-GIO" firstAttribute="centerX" secondItem="bXh-Ur-iM8" secondAttribute="centerX" id="LAm-Dl-L9v"/>
+                            <constraint firstItem="Qcw-pj-bgK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="M6q-b9-5uZ"/>
+                            <constraint firstItem="Qcw-pj-bgK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dk1-9J-3CW"/>
+                            <constraint firstItem="W1d-eU-GIO" firstAttribute="top" secondItem="BE7-Nr-EUc" secondAttribute="bottom" constant="8" symbolic="YES" id="dxJ-J7-a7d"/>
+                            <constraint firstItem="bIQ-vx-VmK" firstAttribute="centerX" secondItem="Qcw-pj-bgK" secondAttribute="centerX" id="eVm-eS-a8j"/>
+                            <constraint firstItem="bhi-bd-Ic2" firstAttribute="trailing" secondItem="bIQ-vx-VmK" secondAttribute="trailing" id="gkj-Fq-9l0"/>
+                            <constraint firstItem="bIQ-vx-VmK" firstAttribute="top" secondItem="bhi-bd-Ic2" secondAttribute="bottom" constant="41" id="mTi-W8-bL4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P4o-Si-wsi" secondAttribute="bottom" constant="134" id="o1v-xK-RtE"/>
+                            <constraint firstItem="Qcw-pj-bgK" firstAttribute="centerX" secondItem="BE7-Nr-EUc" secondAttribute="centerX" id="oHl-Ed-H15"/>
+                            <constraint firstItem="bhi-bd-Ic2" firstAttribute="leading" secondItem="bIQ-vx-VmK" secondAttribute="leading" id="qlF-Br-fMs"/>
+                            <constraint firstItem="bXh-Ur-iM8" firstAttribute="centerX" secondItem="P4o-Si-wsi" secondAttribute="centerX" id="uZN-GY-X1h"/>
+                            <constraint firstItem="BE7-Nr-EUc" firstAttribute="top" secondItem="Qcw-pj-bgK" secondAttribute="bottom" constant="13" id="vBw-3z-Ole"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstNumber" destination="bhi-bd-Ic2" id="YOL-s1-QPE"/>
+                        <outlet property="result" destination="Qcw-pj-bgK" id="UuE-MF-3oz"/>
+                        <outlet property="secondNumber" destination="bIQ-vx-VmK" id="fDi-2N-Yxi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="344"/>
+        </scene>
+    </scenes>
+</document>
