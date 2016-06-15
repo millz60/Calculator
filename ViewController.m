@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,41 +27,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 -(IBAction) buttonPressed:(UIButton *) sender{
+    
+    Calculator *calc = [[Calculator alloc] init];
     
     NSString *firstValue = self.firstNumber.text;
     NSString *secondValue = self.secondNumber.text;
     NSString *operation =  sender.titleLabel.text;
     
     if ([operation isEqualToString:@"Add"]){
-        self.result.text = [NSString stringWithFormat:@"%.03f",[self add: firstValue second: secondValue]];
+        double add_answer = [calc add: firstValue second: secondValue];
+        self.result.text = [NSString stringWithFormat:@"%.02f",add_answer];
     }
     else if ([operation isEqualToString:@"Subtract"]){
-        self.result.text = [NSString stringWithFormat:@"%.03f",[self subtract: firstValue second: secondValue]];
+        double subtract_answer = [calc subtract: firstValue second: secondValue];
+        self.result.text = [NSString stringWithFormat:@"%.02f",subtract_answer];
     }
     else if ([operation isEqualToString:@"Multiply"]){
-        self.result.text = [NSString stringWithFormat:@"%.03f",[self multiply: firstValue second: secondValue]];
+        double multiply_answer = [calc multiply: firstValue second: secondValue];
+        self.result.text = [NSString stringWithFormat:@"%.02f",multiply_answer];
     }
     else{
-        self.result.text = [NSString stringWithFormat:@"%.03f",[self divide: firstValue second: secondValue]];
+        double divide_answer = [calc divide: firstValue second: secondValue];
+        self.result.text = [NSString stringWithFormat:@"%.02f",divide_answer];
     }
+    [_secondNumber resignFirstResponder];
+    [_firstNumber resignFirstResponder];
 }
 
--(double) add:(NSString *) first second:(NSString *) second{
-    return first.doubleValue + second.doubleValue;
-}
 
--(double) subtract:(NSString *) first second:(NSString *) second{
-    return first.doubleValue - second.doubleValue;
-}
-
--(double) multiply:(NSString *) first second:(NSString *) second{
-    return first.doubleValue * second.doubleValue;
-}
-
--(double) divide:(NSString *) first second:(NSString *) second{
-    return first.doubleValue / second.doubleValue;
-}
 
 
 
